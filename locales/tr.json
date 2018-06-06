@@ -5,9 +5,9 @@
       "connected": "Bağlantı kuruldu!"
     },
     "file-diff": {
-      "binary": "Binary file not shown",
+      "binary": "İkili dosya görüntülenemiyor",
       "actions": {
-        "open": "Open in editor"
+        "open": "Düzenleyici ile aç"
       }
     },
     "file-diff-view": {
@@ -84,54 +84,56 @@
       }
     },
     "project-plugin-item": {
-      "version": "version",
-      "latest": "latest",
-      "official": "Official",
-      "installed": "Installed",
+      "version": "sürüm",
+      "latest": "son sürüm",
+      "official": "Resmi",
+      "installed": "Yüklendi",
       "actions": {
-        "update": "Update {target}"
+        "update": "Güncelle {target}"
       }
     },
     "prompt-list": {
-      "default": "Default"
+      "default": "Varsayılan"
     },
     "prompts-list": {
-      "empty": "No configuration"
+      "empty": "Yapılandırma yok"
     },
     "status-bar": {
       "project": {
-        "tooltip": "Current project<br><i>Click to toggle Project Manager</i>",
+        "tooltip":
+          "Geçerli proje<br><i>Proje yöneticisini açmak/kapatmak için tıklayın</i>",
         "empty": "Proje yok"
       },
       "path": {
-        "tooltip": "Current Working Folder"
+        "tooltip": "Geçerli çalışma dizini"
       },
       "log": {
-        "tooltip": "Logs<br><i>Click to toggle Vue CLI logs</i>",
-        "empty": "No logs yet"
+        "tooltip":
+          "Geçmiş<br><i>Vue CLI geçmişini amak/kapatmak için tıklayın</i>",
+        "empty": "Geçmiş kaydı yok"
       },
       "report-bug": "Hata bildir"
     },
     "terminal-view": {
       "buttons": {
-        "clear": "Clear console",
-        "scroll": "Scroll to bottom"
+        "clear": "Konsolu temizle",
+        "scroll": "Alta kaydır"
       }
     },
     "view-badge": {
       "labels": {
         "tasks": {
-          "error": "Error status",
-          "running": "Running status",
-          "done": "Done status"
+          "error": "Hata durumu",
+          "running": "Çalışma durumu",
+          "done": "Tamamlanma durumu"
         }
       }
     }
   },
   "mixins": {
     "progress": {
-      "creating": "Creating project...",
-      "git-init": "Initializing git repository...",
+      "creating": "Proje oluşturuluyor...",
+      "git-init": "Git deposu başlatılıyor...",
       "plugins-install":
         "Installing Vue CLI plugins. This might take a while...",
       "invoking-generators": "Invoking generators...",
@@ -149,8 +151,8 @@
     "task": {
       "status": {
         "idle": "Boşta",
-        "running": "Running",
-        "done": "Done",
+        "running": "Çalışıyor",
+        "done": "Tamamlandı",
         "error": "Hata",
         "terminated": "Sonlandırıldı"
       }
@@ -266,33 +268,33 @@
       }
     },
     "project-plugins": {
-      "title": "Project plugins",
-      "button": "Add plugin",
-      "heading": "Installed plugins"
+      "title": "Proje eklentileri",
+      "button": "Eklenti yükle",
+      "heading": "Yüklü eklentiler"
     },
     "project-plugins-add": {
-      "title": "Add a plugin",
+      "title": "Bir eklenti yükle",
       "plugin": "plugin",
       "tabs": {
         "search": {
-          "label": "Search",
-          "search-input": "Search a plugin",
-          "not-found": "No results found",
+          "label": "Ara",
+          "search-input": "Bir eklenti ara",
+          "not-found": "Sonuç bulunamadı",
           "buttons": {
-            "cancel": "Cancel",
-            "install": "Install {target}"
+            "cancel": "Vazgeç",
+            "install": "{target}'i yükle"
           }
         },
         "configuration": {
-          "label": "Configuration",
+          "label": "Yapılandırma",
           "heading": "Installation of {target}",
           "buttons": {
-            "cancel": "Cancel",
-            "finish": "Finish installation"
+            "cancel": "Vazgeç",
+            "finish": "Kurulumu tamamla"
           }
         },
         "diff": {
-          "label": "Files changed"
+          "label": "Dosyalar değişti"
         }
       },
       "modal": {
@@ -306,56 +308,57 @@
       }
     },
     "project-configurations": {
-      "title": "Project configuration"
+      "title": "Proje yapılandırması"
     },
     "project-configuration-details": {
       "actions": {
-        "cancel": "Cancel changes",
-        "save": "Save changes",
-        "more-info": "More info"
+        "cancel": "Değişiklikleri iptal et",
+        "save": "Değişiklikleri Kaydet",
+        "more-info": "Daha Fazla Bilgi"
       }
     },
     "project-tasks": {
-      "title": "Project tasks"
+      "title": "Proje Görevleri"
     },
     "project-task-details": {
       "actions": {
-        "play": "Run task",
-        "stop": "Stop task",
-        "close": "Close"
+        "play": "Görevi çalıştır",
+        "stop": "Görevi durdur",
+        "close": "Kapat"
       },
       "command": "Script command",
-      "parameters": "Parameters",
-      "parameters-info": "Parameters will be saved when the task is run.",
-      "more-info": "More Info",
-      "output": "Output"
+      "parameters": "Parametreler",
+      "parameters-info":
+        "Görev çalıştırıldığında parametreler kaydedilecektir.",
+      "more-info": "Daha Fazla Bilgi",
+      "output": "Çıktı"
     },
     "about": {
-      "title": "About",
+      "title": "Hakkında",
       "description":
         "<a href=\"https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-ui\" target=\"_blank\">@vue/cli-ui</a> is a built-in package of vue-cli which opens a full-blown UI.",
       "quote":
         "Vue-cli 3.x is a complete rewrite, with a lot of new awesome features. You will be to select features like routing, Vuex or Typescript, then add and upgrade building blocks called \"vue-cli plugins\". But having so much more options also means the tool is now more complex and harder to start using. That's why we thought having a full-blown GUI would help discover the new features, search and install vue-cli plugins and unlock more possibilities overall while not being limited by a terminal interface. To sum up, vue-cli will not only allow you to bootstrap a new project easily, but it will also remain useful for ongoing work afterwards!",
-      "links": "Useful links",
-      "back": "Go back"
+      "links": "Faydalı bağlantılar",
+      "back": "Geri dön"
     }
   },
   "vue-webpack": {
     "dashboard": {
-      "title": "Dashboard",
-      "open-app": "Open app",
+      "title": "Pano",
+      "open-app": "Uygulamayı aç",
       "webpack-status": {
         "Success": "Başarılı",
         "Failed": "Hata oluştu",
         "Compiling": "Derleniyor",
-        "Invalidated": "Invalidated",
-        "Idle": "Idle"
+        "Invalidated": "Geçersiz",
+        "Idle": "Boşta"
       },
       "build-status": {
         "labels": {
           "status": "Durum",
-          "errors": "Errors",
-          "warnings": "Warnings",
+          "errors": "Hatalar",
+          "warnings": "Uyarılar",
           "assets": "Assets",
           "modules": "Modules",
           "deps": "Dependencies"
