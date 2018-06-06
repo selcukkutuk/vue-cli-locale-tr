@@ -1,8 +1,8 @@
 {
   "components": {
     "connection-status": {
-      "disconnected": "Disconnected from UI server",
-      "connected": "Connected!"
+      "disconnected": "UI sunucusuna olan bağlantı koptu.",
+      "connected": "Bağlantı kuruldu!"
     },
     "file-diff": {
       "binary": "Binary file not shown",
@@ -13,24 +13,24 @@
     "file-diff-view": {
       "files-changed": "Files changed",
       "search-file": "Search file",
-      "empty": "No change found",
+      "empty": "Değişiklik bulunamadı",
       "modals": {
         "commit": {
-          "title": "Commit changes",
-          "input": "Enter a commit message",
-          "subtitle": "Record changes to the repository",
+          "title": "Değişiklikleri gönder",
+          "input": "Değişiklikler ile ilgili bir açıklama yazın",
+          "subtitle": "Kodda yapılan değişiklikleri kaydet",
           "actions": {
-            "commit": "Commit",
-            "cancel": "Cancel"
+            "commit": "Gönder",
+            "cancel": "Vazgeç"
           }
         }
       },
       "actions": {
-        "collapse-all": "Collapse all",
-        "expand-all": "Expand all",
-        "commit": "Commit changes",
-        "skip": "Skip",
-        "continue": "Continue",
+        "collapse-all": "Tümünü daralt",
+        "expand-all": "Tümünü genişlet",
+        "commit": "Değişiklikleri gönder",
+        "skip": "Atla",
+        "continue": "Devam et",
         "refresh": "Yenile"
       }
     },
@@ -39,7 +39,7 @@
         "tooltips": {
           "parent-folder": "Üst klasörü aç",
           "edit-path": "Dosya yolunu düzenle",
-          "favorite": "Sık kullanılanılanları değiştir",
+          "favorite": "Sık kullanılan Ekle/Kaldır",
           "favorite-folders": "Sık kullanılan klasörler",
           "refresh": "Yenile"
         },
@@ -48,39 +48,39 @@
       }
     },
     "list-item-info": {
-      "more-info": "More Info"
+      "more-info": "Daha fazla bilgi"
     },
     "logger-view": {
-      "title": "Logs",
-      "empty": "Not logs yet",
+      "title": "Geçmiş",
+      "empty": "Geçmiş kaydı yok",
       "buttons": {
-        "clear": "Clear logs",
-        "scroll": "Scroll to bottom",
-        "close": "Close"
+        "clear": "Geçmişi temizle",
+        "scroll": "Alta kaydır",
+        "close": "Kapat"
       }
     },
     "progress-screen": {
-      "close": "Close"
+      "close": "Kapat"
     },
     "project-nav": {
       "tooltips": {
-        "plugins": "Plugins",
-        "configuration": "Configuration",
-        "tasks": "Tasks",
-        "more": "More"
+        "plugins": "Eklentiler",
+        "configuration": "Yapılandırma",
+        "tasks": "Görevler",
+        "more": "Daha fazla"
       }
     },
     "project-select-list": {
       "empty": "Mevcut proje yok",
       "titles": {
-        "favorite": "Favorite projects",
-        "other": "Other projects"
+        "favorite": "Sık kullanılan projeler",
+        "other": "Diğer projeler"
       }
     },
     "project-select-list-item": {
       "tooltips": {
-        "favorite": "Toggle favorite",
-        "delete": "Delete"
+        "favorite": "Sık kullanılan ekle/kaldır",
+        "delete": "Sil"
       }
     },
     "project-plugin-item": {
@@ -148,11 +148,11 @@
   "types": {
     "task": {
       "status": {
-        "idle": "Idle",
+        "idle": "Boşta",
         "running": "Running",
         "done": "Done",
-        "error": "Error",
-        "terminated": "Terminated"
+        "error": "Hata",
+        "terminated": "Sonlandırıldı"
       }
     }
   },
