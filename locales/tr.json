@@ -138,7 +138,7 @@
         "Vue CLI eklentileri yükleniyor. Bu işlem biraz zaman alabilir...",
       "invoking-generators": "Oluşturucular çalıştırılıyor...",
       "deps-install": "Ek bağımlılıklar yükleniyor...",
-      "completion-hooks": "Running completion hooks...",
+      "completion-hooks": "Bitirme kancaları çalıştırılıyor...",
       "fetch-remote-preset": "Fetching remote preset...",
       "done": "Proje başarıyla oluşturuldu",
       "plugin-install": "{arg0} yükleniyor...",
@@ -206,10 +206,10 @@
           }
         },
         "presets": {
-          "title": "Ön tanımlı ayarlar",
+          "title": "Şablon ayarları",
           "description":
-            "Ön ayar, eklenti ve yapılandırmaların birleşimidir. Özellikleri seçtikten sonra isteğe bağlı olarak bir ön ayar olarak kaydedebilir, böylece her şeyi yeniden yapılandırmak zorunda kalmadan gelecekteki projeler için yeniden kullanabilirsiniz.",
-          "select": "Bir ön tanımlı ayar seçin",
+            "Şablon, eklenti ve yapılandırmaların birleşimidir. Özellikleri seçtikten sonra isteğe bağlı olarak bir şablon olarak kaydedebilir, böylece her şeyi yeniden yapılandırmak zorunda kalmadan gelecekteki projeler için yeniden kullanabilirsiniz.",
+          "select": "Bir şablon seçin",
           "buttons": {
             "previous": "Önceki",
             "next": "Sonraki",
@@ -225,9 +225,9 @@
           },
           "remote": {
             "name": "Remote preset",
-            "description": "Git deposundan bir ön ayar al"
+            "description": "Git deposundan şablon al"
           },
-          "default-preset": "Varsayılan ön ayar"
+          "default-preset": "Varsayılan şablon"
         },
         "features": {
           "title": "Özellikler",
@@ -259,9 +259,9 @@
                 "Özellikleri ve yapılandırmayı yeni bir önayara kaydet"
             },
             "buttons": {
-              "cancel": "İptal",
+              "cancel": "Vazgeç",
               "continue": "Kaydetmeden devam et",
-              "create": "Yeni bir ön ayar oluştur"
+              "create": "Yeni bir şablon oluştur"
             }
           }
         }
@@ -360,15 +360,15 @@
           "errors": "Hatalar",
           "warnings": "Uyarılar",
           "assets": "Assets",
-          "modules": "Modules",
-          "deps": "Dependencies"
+          "modules": "Modüller",
+          "deps": "Bağımlılıklar"
         }
       },
       "speed-stats": {
-        "title": "Speed stats"
+        "title": "Hız istatistikleri"
       },
       "module-list": {
-        "title": "Dependencies"
+        "title": "Bağımlılıklar"
       },
       "asset-list": {
         "title": "Assets",
@@ -377,9 +377,9 @@
       }
     },
     "analyzer": {
-      "title": "Analyzer",
-      "go-up": "Go up",
-      "go-home": "Go to home",
+      "title": "Çözümleyici",
+      "go-up": "Yukarı git",
+      "go-home": "Başa dön",
       "chunk": "Chunk"
     },
     "sizes": {
@@ -391,31 +391,31 @@
     },
     "tasks": {
       "serve": {
-        "description": "Compiles and hot-reloads for development",
-        "open": "Open browser on server start",
-        "mode": "Specify env mode",
-        "host": "Specify host",
-        "port": "Specify port",
-        "https": "Use HTTPS"
+        "description": "Geliştirme için derleme ve yeniden yükleme",
+        "open": "Sunucu başlatıldığında tarayıcıyı aç",
+        "mode": "Env modunu belirt",
+        "host": "Host'u belirt",
+        "port": "Port'u belirt",
+        "https": "HTTPS kullan"
       },
       "build": {
-        "description": "Compiles and minifies for production",
-        "mode": "Specify env mode",
-        "dest": "Output directory",
+        "description": "Üretim için derleme ve sıkıştırma",
+        "mode": "Env modunu belirt",
+        "dest": "Çıktı dizini",
         "target": {
           "description": "Build target",
-          "app": "Web app",
-          "lib": "Library",
-          "wc": "Web component",
-          "wc-async": "Async web component"
+          "app": "Web uygulaması",
+          "lib": "Kütüphane",
+          "wc": "Web bileşeni",
+          "wc-async": "Async web bileşeni"
         },
         "name":
           "Name for library or web-component mode (default: 'name' in package.json or entry filename)",
-        "watch": "Watch for changes"
+        "watch": "Değişiklikleri izle"
       },
       "inspect": {
         "description": "Inspect the resolved webpack config",
-        "mode": "Specify env mode",
+        "mode": "Env modunu belirt",
         "verbose": "Show full function definitions in output"
       }
     }
@@ -440,8 +440,8 @@
     },
     "tasks": {
       "lint": {
-        "description": "Lints and fixes files",
-        "noFix": "Do not fix errors"
+        "description": "Dosyaları denetle ve düzelt",
+        "noFix": "Hataları düzeltme"
       }
     }
   },
