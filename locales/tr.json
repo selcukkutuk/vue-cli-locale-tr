@@ -109,7 +109,7 @@
       },
       "log": {
         "tooltip":
-          "Geçmiş<br><i>Vue CLI geçmişini amak/kapatmak için tıklayın</i>",
+          "Geçmiş<br><i>Vue CLI geçmişini açmak/kapatmak için tıklayın</i>",
         "empty": "Geçmiş kaydı yok"
       },
       "report-bug": "Hata bildir"
@@ -135,16 +135,16 @@
       "creating": "Proje oluşturuluyor...",
       "git-init": "Git deposu başlatılıyor...",
       "plugins-install":
-        "Installing Vue CLI plugins. This might take a while...",
-      "invoking-generators": "Invoking generators...",
-      "deps-install": "Installing additional dependencies...",
+        "Vue CLI eklentileri yükleniyor. Bu işlem biraz zaman alabilir...",
+      "invoking-generators": "Oluşturucular çalıştırılıyor...",
+      "deps-install": "Ek bağımlılıklar yükleniyor...",
       "completion-hooks": "Running completion hooks...",
       "fetch-remote-preset": "Fetching remote preset...",
-      "done": "Successfully created project",
-      "plugin-install": "Installing {arg0}...",
-      "plugin-uninstall": "Uninstalling {arg0}...",
-      "plugin-invoke": "Invoking {arg0}...",
-      "plugin-update": "Updating {arg0}..."
+      "done": "Proje başarıyla oluşturuldu",
+      "plugin-install": "{arg0} yükleniyor...",
+      "plugin-uninstall": "{arg0} kaldırılıyor...",
+      "plugin-invoke": "{arg0} çalıştırılıyor...",
+      "plugin-update": "{arg0} güncelleniyor..."
     }
   },
   "types": {
