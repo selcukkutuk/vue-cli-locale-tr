@@ -129,6 +129,9 @@
         "scroll": "Alta kaydır"
       }
     },
+    "top-bar": {
+      "no-favorites": "Sık kullanılan proje yok"
+    },
     "view-badge": {
       "labels": {
         "tasks": {
@@ -281,7 +284,8 @@
     "project-plugins": {
       "title": "Proje eklentileri",
       "button": "Eklenti yükle",
-      "heading": "Yüklü eklentiler"
+      "heading": "Yüklü eklentiler",
+      "update-all": "Tüm eklentileri güncelle"
     },
     "project-plugins-add": {
       "title": "Bir eklenti yükle",
@@ -325,7 +329,8 @@
       "actions": {
         "cancel": "Değişiklikleri iptal et",
         "save": "Değişiklikleri Kaydet",
-        "more-info": "Daha Fazla Bilgi"
+        "more-info": "Daha Fazla Bilgi",
+        "refresh": "Yenile"
       }
     },
     "project-tasks": {
@@ -451,9 +456,9 @@
         }
       },
       "inspect": {
-        "description": "Inspect the resolved webpack config",
+        "description": "Webpack yapılandırmasını inceleyin",
         "mode": "Env modunu belirt",
-        "verbose": "Show full function definitions in output"
+        "verbose": "Oluşturulacak çıktıda tam işlev tanımlarını göster"
       }
     }
   },
@@ -464,14 +469,17 @@
         "groups": {
           "strongly-recommended": "Kesinlikle önerilir",
           "recommended": "Önerilir"
-        }
-      },
-      "eslint-extra": {
-        "description": "Ek ESLint ayarları",
-        "lintOnSave": {
-          "message": "Kaydederken hataları denetle",
-          "description":
-            "Kaynak dosyaları kaydedildiğinde hataları otomatik olarak denetle"
+        },
+        "vue": {
+          "label": "Vue"
+        },
+        "extra": {
+          "label": "Ekstra",
+          "lintOnSave": {
+            "message": "Kaydederken hataları denetle",
+            "description":
+              "Kaynak dosyaları kaydedildiğinde hataları otomatik olarak denetle"
+          }
         }
       }
     },
@@ -542,7 +550,7 @@
   "nightwatch": {
     "tasks": {
       "test": {
-        "description": "Run e2e tests with nightwatch",
+        "description": "Nightwatch ile uçtan uca testleri (e2e) çalıştırın",
         "url":
           "Run e2e tests against given url instead of auto-starting dev server"
       }
@@ -556,6 +564,15 @@
           "Watch files for changes and rerun tests related to changed files",
         "notify": "Display a notification after each run",
         "update": "Re-record every snapshot that fails during this test run"
+      }
+    }
+  },
+  "mocha": {
+    "tasks": {
+      "test": {
+        "description": "Mocha ile birim testlerini çalıştır",
+        "watch":
+          "Değişiklik yapılan dosyaları izleyin ve değiştirilen dosyalarla ilgili olan testleri yeniden çalıştırın"
       }
     }
   }
