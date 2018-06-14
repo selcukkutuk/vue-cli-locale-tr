@@ -112,7 +112,16 @@
           "Geçmiş<br><i>Vue CLI geçmişini açmak/kapatmak için tıklayın</i>",
         "empty": "Geçmiş kaydı yok"
       },
-      "report-bug": "Hata bildir"
+      "report-bug": "Hata bildir",
+      "translate": "Çeviriye yardım et",
+      "dark-mode": "Karanlık modu değiştir"
+    },
+    "suggestion-bar": {
+      "suggestion": "Öneri",
+      "modal": {
+        "cancel": "İptal et",
+        "continue": "Devam et"
+      }
     },
     "terminal-view": {
       "buttons": {
@@ -139,7 +148,7 @@
       "invoking-generators": "Oluşturucular çalıştırılıyor...",
       "deps-install": "Ek bağımlılıklar yükleniyor...",
       "completion-hooks": "Bitirme kancaları çalıştırılıyor...",
-      "fetch-remote-preset": "Fetching remote preset...",
+      "fetch-remote-preset": "Sunucu şablonları alınıyor...",
       "done": "Proje başarıyla oluşturuldu",
       "plugin-install": "{arg0} yükleniyor...",
       "plugin-uninstall": "{arg0} kaldırılıyor...",
@@ -218,7 +227,7 @@
             "create": "Proje Oluştur"
           },
           "modal": {
-            "title": "Configure Remote preset",
+            "title": "Sunucu şablonlarını yapılandır",
             "body": "Yakında..."
           },
           "manual": {
@@ -345,6 +354,26 @@
       "back": "Geri dön"
     }
   },
+  "cli-service": {
+    "suggestions": {
+      "vue-router-add": {
+        "label": "Vue-router'ı Ekle",
+        "message":
+          "SPA uygulamanızda birden fazla sanal sayfayı yönetmek için resmi kütüphane. Tanımlnan her rota farklı bir bileşeni sunar."
+      },
+      "vuex-add": {
+        "label": "Vuex'i Ekle",
+        "message":
+          "Büyük ölçekli uygulamalar için resmi merkezi veri yönetimi çözümü. Birden fazla bileşenin aynı verilere erişmesi gerektiğinde çok faydalıdır."
+      },
+      "vue-devtools": {
+        "label": "Geliştirici araçlarını yükle",
+        "message":
+          "Bileşenlerinizi, vuex depolarınızı ve olaylarınızı inceleyebileceğiniz ayrıca Vue.js uygulamanızda hata ayıklaması yapabileceğiniz resmi tarayıcı uzantısı."
+      },
+      "progress": "Yükleniyor {arg0}..."
+    }
+  },
   "vue-webpack": {
     "dashboard": {
       "title": "Pano",
@@ -391,6 +420,7 @@
       "help":
         "<b>Stats:</b> size from webpack stats data.<br><b>Parsed:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source."
     },
+    "modern-mode": "Show modern build",
     "tasks": {
       "serve": {
         "description": "Geliştirme için derleme ve yeniden yükleme",
@@ -413,7 +443,12 @@
         },
         "name":
           "Name for library or web-component mode (default: 'name' in package.json or entry filename)",
-        "watch": "Değişiklikleri izle"
+        "watch": "Değişiklikleri izle",
+        "modern": {
+          "label": "Modern mode",
+          "description":
+            "Build app targeting modern browsers with auto fallback"
+        }
       },
       "inspect": {
         "description": "Inspect the resolved webpack config",
@@ -444,6 +479,11 @@
       "lint": {
         "description": "Dosyaları denetle ve düzelt",
         "noFix": "Hataları düzeltme"
+      }
+    },
+    "suggestions": {
+      "open-eslintrc": {
+        "label": "Eslintrc dosyasını aç"
       }
     }
   },
@@ -478,6 +518,14 @@
           "description": "Style for the web app status bar on iOS"
         }
       }
+    },
+    "suggestions": {
+      "open-vue": {
+        "label": "Vue yapılandırma dosyasını aç"
+      },
+      "open-manifest": {
+        "label": "Manifest dosyasını aç"
+      }
     }
   },
   "cypress": {
@@ -497,6 +545,17 @@
         "description": "Run e2e tests with nightwatch",
         "url":
           "Run e2e tests against given url instead of auto-starting dev server"
+      }
+    }
+  },
+  "jest": {
+    "tasks": {
+      "test": {
+        "description": "Run unit tests with Jestks",
+        "watch":
+          "Watch files for changes and rerun tests related to changed files",
+        "notify": "Display a notification after each run",
+        "update": "Re-record every snapshot that fails during this test run"
       }
     }
   }
