@@ -189,7 +189,9 @@
             },
             "options": {
               "label": "Ek seçenekler",
-              "description": "Varsa hedef klasörün üzerine yaz"
+              "force": "Varsa hedef klasörün üzerine yaz",
+              "git": "Git deposunu başlat (önerilir)",
+              "git-commit-message": "İlk işlem mesajı (isteğe bağlı)"
             }
           },
           "buttons": {
@@ -224,7 +226,7 @@
             "description": "Özellikleri el ile seç"
           },
           "remote": {
-            "name": "Remote preset",
+            "name": "Sunucu şablonları",
             "description": "Git deposundan şablon al"
           },
           "default-preset": "Varsayılan şablon"
