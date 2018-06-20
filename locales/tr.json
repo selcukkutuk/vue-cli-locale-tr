@@ -11,8 +11,8 @@
       }
     },
     "file-diff-view": {
-      "files-changed": "Files changed",
-      "search-file": "Search file",
+      "files-changed": "Dosyalar değişti",
+      "search-file": "Dosya ara",
       "empty": "Değişiklik bulunamadı",
       "modals": {
         "commit": {
@@ -44,7 +44,19 @@
           "refresh": "Yenile"
         },
         "placeholder": "Bir klasörün tam yolunu girin",
-        "empty": "Henüz sık kullanılan klasör yok"
+        "empty": "Henüz sık kullanılan klasör yok",
+        "show-hidden": "Gizli klasörleri göster"
+      },
+      "new-folder": {
+        "action": "Yeni klasör",
+        "title": "Yeni klasör oluştur",
+        "field": {
+          "title": "Yeni klasör",
+          "subtitle":
+            "Aynı anda birden çok iç içe geçmiş klasör oluşturmak için klasör ayırıcısını kullanabilirsiniz."
+        },
+        "cancel": "İptal",
+        "create": "Oluştur"
       }
     },
     "list-item-info": {
@@ -114,7 +126,8 @@
       },
       "report-bug": "Hata bildir",
       "translate": "Çeviriye yardım et",
-      "dark-mode": "Karanlık modu değiştir"
+      "dark-mode": "Karanlık modu değiştir",
+      "reset-plugin-api": "Eklenti APIsini yenile"
     },
     "suggestion-bar": {
       "suggestion": "Öneri",
@@ -156,7 +169,8 @@
       "plugin-install": "{arg0} yükleniyor...",
       "plugin-uninstall": "{arg0} kaldırılıyor...",
       "plugin-invoke": "{arg0} çalıştırılıyor...",
-      "plugin-update": "{arg0} güncelleniyor..."
+      "plugin-update": "{arg0} güncelleniyor...",
+      "plugins-update": "{arg0} eklenti güncelleniyor..."
     }
   },
   "types": {
@@ -181,6 +195,14 @@
       "buttons": {
         "create": "Yeni bir proje oluştur",
         "import": "Bu klasörü içe aktar"
+      },
+      "import": {
+        "no-modules": {
+          "title": "Eksik modül(ler)",
+          "message":
+            "Projenin 'node_modules' klasörü eksik görünüyor. Lütfen içe aktarmadan önce bağımlılıkları kurduğunuzdan emin olun.",
+          "close": "Got it"
+        }
       }
     },
     "project-create": {
@@ -193,7 +215,9 @@
               "label": "Proje klasörü",
               "placeholder": "my-app",
               "tooltip": "Temel klasörü değiştir",
-              "action": "Bu klasörü seç"
+              "action": "Bu klasörü seç",
+              "folder-exists": "Bu klasör zaten mevcut",
+              "folder-name-invalid": "Klasör ismi geçersiz"
             },
             "manager": {
               "label": "Paket yöneticisi",
@@ -202,6 +226,7 @@
             "options": {
               "label": "Ek seçenekler",
               "force": "Varsa hedef klasörün üzerine yaz",
+              "git-title": "Git deposu",
               "git": "Git deposunu başlat (önerilir)",
               "git-commit-message": "İlk işlem mesajı (isteğe bağlı)"
             }
@@ -239,7 +264,16 @@
           },
           "remote": {
             "name": "Sunucu şablonları",
-            "description": "Git deposundan şablon al"
+            "description": "Git deposundan şablon al",
+            "url": {
+              "title": "Şablon Bağlantısı",
+              "subtitle":
+                "Git repo, for example 'username/repo'. You can also prefix with 'gitlab:' or 'bitbucket:'."
+            },
+            "options": "Other options",
+            "clone": "Private repository",
+            "cancel": "Cancel",
+            "done": "Done"
           },
           "default-preset": "Varsayılan şablon"
         },
@@ -460,6 +494,65 @@
         "mode": "Env modunu belirt",
         "verbose": "Oluşturulacak çıktıda tam işlev tanımlarını göster"
       }
+    },
+    "config": {
+      "vue-cli": {
+        "description": "Vue projenizi yapılandırın",
+        "groups": {
+          "general": "Genel ayarlar",
+          "css": "CSS ayarları"
+        },
+        "baseUrl": {
+          "label": "Base URL",
+          "description":
+            "The base URL your application will be deployed at, for example '/my-app/'. Use an empty string ('') so that all assets are linked using relative paths."
+        },
+        "outputDir": {
+          "label": "Çıktı dizini",
+          "description":
+            "The directory where the production build files will be generated"
+        },
+        "assetsDir": {
+          "label": "Assets directory",
+          "description":
+            "A directory to nest generated static assets (js, css, img, fonts) under."
+        },
+        "runtimeCompiler": {
+          "label": "Enable runtime compiler",
+          "description":
+            "This will allow you to use the template option in Vue components, but will incur around an extra 10kb payload for your app."
+        },
+        "productionSourceMap": {
+          "label": "Enable Production Source Maps",
+          "description":
+            "Disabling this can speed up production builds if you don't need source maps for production"
+        },
+        "parallel": {
+          "label": "Parallel compilation",
+          "description":
+            "Whether to use multiple processors to compile Babel or Typescript."
+        },
+        "css": {
+          "modules": {
+            "label": "Enable CSS Modules",
+            "description":
+              "By default, only files that ends in *.module.[ext] are treated as CSS modules. Enabling this will treat all style files as CSS modules."
+          },
+          "extract": {
+            "label": "Extract CSS",
+            "description":
+              "Whether to extract CSS in your components into a standalone CSS files (instead of inlined in JavaScript and injected dynamically)."
+          },
+          "sourceMap": {
+            "label": "Enable CSS Source Maps",
+            "description":
+              "Whether to enable source maps for CSS. Enabling this may affect build performance."
+          }
+        }
+      }
+    },
+    "suggestions": {
+      "vue-config-open": "Open vue config"
     }
   },
   "eslint": {
