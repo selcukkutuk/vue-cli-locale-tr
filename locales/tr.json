@@ -210,60 +210,60 @@
       },
       "views": {
         "project-select": {
-          "title": "Vue Project Manager",
+          "title": "Vue Proje Yöneticisi",
           "tabs": {
-            "projects": "Projects",
-            "create": "Create",
-            "import": "Import"
+            "projects": "Projeler",
+            "create": "Oluştur",
+            "import": "İçe aktar"
           },
           "buttons": {
-            "create": "Create a new project here",
-            "import": "Import this folder"
+            "create": "Yeni bir proje oluştur",
+            "import": "Bu klasörü içe aktar"
           },
           "import": {
             "no-modules": {
-              "title": "Missing modules",
-              "message": "It seems the project is missing the 'node_modules' folder. Please check you installed the dependencies before importing.",
+              "title": "Eksik modül(ler)",
+              "message": "Projenin 'node_modules' klasörü eksik görünüyor. Lütfen içe aktarmadan önce bağımlılıkları kurduğunuzdan emin olun.",
               "close": "Got it"
             }
           }
         },
         "project-create": {
-          "title": "Create a new project",
+          "title": "Yeni bir proje oluştur",
           "tabs": {
             "details": {
-              "title": "Details",
+              "title": "Detaylar",
               "form": {
                 "folder": {
-                  "label": "Project folder",
-                  "placeholder": "Type a name",
-                  "tooltip": "Change base folder",
-                  "action": "Select this folder",
-                  "folder-exists": "This folder already exists",
-                  "folder-name-invalid": "Folder name invalid"
+                  "label": "Proje klasörü",
+                  "placeholder": "my-app",
+                  "tooltip": "Temel klasörü değiştir",
+                  "action": "Bu klasörü seç",
+                  "folder-exists": "Bu klasör zaten mevcut",
+                  "folder-name-invalid": "Klasör ismi geçersiz"
                 },
                 "manager": {
-                  "label": "Package manager",
-                  "default": "Default"
+                  "label": "Paket yöneticisi",
+                  "default": "Varsayılan"
                 },
                 "options": {
-                  "label": "Additional options",
-                  "force": "Overwrite target folder if it exists",
-                  "git-title": "Git repository",
-                  "git": "Initialize git repository (recommended)",
-                  "git-commit-message": "Initial commit message (optional)"
+                  "label": "Ek seçenekler",
+                  "force": "Varsa hedef klasörün üzerine yaz",
+                  "git-title": "Git deposu",
+                  "git": "Git deposunu başlat (önerilir)",
+                  "git-commit-message": "İlk işlem mesajı (isteğe bağlı)"
                 }
               },
               "buttons": {
-                "cancel": "Cancel",
-                "next": "Next"
+                "cancel": "İptal",
+                "next": "Sonraki"
               },
               "modal": {
-                "title": "Cancel and reset project creation",
-                "body": "Are you sure you want to reset the project creation?",
+                "title": "Proje oluşturmayı iptal et ve sıfırla",
+                "body": "Proje oluşturmayı sıfırlamak istediğinizden emin misiniz?",
                 "buttons": {
-                  "back": "Go back",
-                  "clear": "Clear project"
+                  "back": "Geri dön",
+                  "clear": "Projeyi temizle"
                 }
               }
             },
